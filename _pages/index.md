@@ -14,7 +14,8 @@ i spend my weekdays working in [Portkey](https://portkey.ai) and doing side pr
 ---
 ## writing
 
-this website is a WIP. i plan to start writing, mostly to capture a trend of changes in my thinking
+- [the harness tax]({{ site.baseurl }}/harness-tax)
+- [llm pricing is 100x harder than you think]({{ site.baseurl }}/llm-pricing)
 
 
 ---
