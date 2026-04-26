@@ -5,65 +5,81 @@ id: home
 permalink: /
 ---
 
-# hi, i'm siddharth.
+<div class="home-profile">
+  <img src="{{ site.baseurl }}/images/me.jpg" alt="Siddharth Sambharia" class="profile-photo">
+  <h2 class="profile-name">Siddharth Sambharia</h2>
+  <p class="profile-links">
+    <a href="https://x.com/siddhxrth10">X</a> · <a href="mailto:sam.siddharth10@gmail.com">Email</a>
+  </p>
+</div>
 
-i'm most active on [X](https://x.com/siddhxrth10) (sometimes more than i would like)
+i spend my weekdays working in [Portkey](https://portkey.ai) and doing side projects on weekends. I have been lucky to discover the work of inspiring people from around the world early in my life, which has greatly influenced my own work and ideas
 
-i spend my weekdays working in [Portkey](https://portkey.ai) and doing side projects on weekends. I have been lucky to discover the work of inspiring people from around the world early in my life, which has greatly influenced my own work and ideas
+i’m most active on [X](https://x.com/siddhxrth10) (sometimes more than i would like)
 
 ---
-## writing
 
-- [the harness tax]({{ site.baseurl }}/harness-tax)
-- [llm pricing is 100x harder than you think]({{ site.baseurl }}/llm-pricing)
-
-
----
 ## things i believe
-
-#### inspired by [nat](https://nat.org), some things i believe:
 
 - the cost of energy will come close to 0 in the coming decades
 - number of iterations is the key to successful things
 - good artists copy, great artists steal
 - agency is the most important thing if intelligence becomes democratized
 
-i will probably add more to this list soon --- meanwhile feel free to say hi on [sam.siddharth10@gmail.com](mailto:sam.siddharth10@gmail.com?subject=Hello!)!
-
-
 ---
-## cool people
 
-i like the idea of writer builders mentioned [here](https://www.workingtheorys.com/p/writer-builder)
+## writing
 
-there are few things that can give you asymmetric returns in life. this website is one experiment to get asymmetric returns. hopefully someone is interested in what i write and it lands into something tangible. or maybe my future wife reads this, i don't know
-
-here's a list of cool people  on the internet that inspired me to write this (with some web presence):
-
-- Anu Atluru
-- Paras Chopra
-- Paul Graham
-- Alexey Guzey
-- Dwarkesh Patel
-- Patrick Collison
-- Nat Friedman
-
-(tool lazy to add links, you can find them yourself!)
-
-
-<strong>recently updated notes</strong>
-
-<ul>
-  {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
-  {% for note in recent_notes limit: 5 %}
+<ul class="writing-list">
+  {% assign notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
+  {% for note in notes %}
     <li>
-      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+      <span class="note-date">{{ note.last_modified_at | date: "%Y-%m-%d" }}</span>
+      <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>
   {% endfor %}
 </ul>
 
+<a class="internal-link all-writing" href="{{ site.baseurl }}/writing">all writing →</a>
+
+---
+
+## cool people
+
+i like the idea of writer builders mentioned [here](https://www.workingtheorys.com/p/writer-builder)
+
+there are few things that can give you asymmetric returns in life. this website is one experiment to get asymmetric returns. hopefully someone is interested in what i write and it lands into something tangible. or maybe my future wife reads this, i don’t know
+
+here’s a list of cool people on the internet that inspired me to write this (with some web presence):
+
+Anu Atluru · Paras Chopra · Paul Graham · Alexey Guzey · Dwarkesh Patel · Patrick Collison · Nat Friedman
+
+(too lazy to add links, you can find them yourself!)in
+
 <style>
-  .wrapper {
-    max-width: 46em;
+  .wrapper { max-width: 42em; margin: 0 auto; }
+  .writing-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5em 0 0.8em;
   }
+  .writing-list li {
+    display: flex;
+    gap: 0.8em;
+    align-items: baseline;
+    margin: 0.35em 0;
+  }
+  .note-date {
+    color: hsl(0, 0%, 55%);
+    font-size: 0.78em;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .all-writing {
+    font-size: 0.88em;
+    color: hsl(0, 0%, 45%);
+    border-bottom: none;
+  }
+  .all-writing:visited { color: hsl(0, 0%, 45%); }
 </style>
