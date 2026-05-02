@@ -9,11 +9,11 @@ permalink: /
   <img src="{{ site.baseurl }}/images/me.jpg" alt="Siddharth Sambharia" class="profile-photo">
   <h2 class="profile-name">Siddharth Sambharia</h2>
   <p class="profile-links">
-    <a href="https://x.com/siddhxrth10">X</a> · <a href="mailto:sam.siddharth10@gmail.com">Email</a>
+    <a href="https://x.com/siddhxrth10">X</a> · <a href="https://github.com/siddharthsambharia-portkey">GitHub</a> · <a href="https://www.linkedin.com/in/siddharthsambharia">LinkedIn</a> · <a href="mailto:sam.siddharth10@gmail.com">Email</a>
   </p>
 </div>
 
-i spend my weekdays working in [Portkey](https://portkey.ai) and doing side projects on weekends. I have been lucky to discover the work of inspiring people from around the world early in my life, which has greatly influenced my own work and ideas
+i work at [Portkey](https://portkey.ai) - 7th hire, now acquired by Palo Alto Networks - and do side projects on weekends. I have been lucky to discover the work of inspiring people from around the world early in my life, which has greatly influenced my own work and ideas
 
 i’m most active on [X](https://x.com/siddhxrth10) (sometimes more than i would like)
 
@@ -41,6 +41,14 @@ i’m most active on [X](https://x.com/siddhxrth10) (sometimes more than i would
 </ul>
 
 <a class="internal-link all-writing" href="{{ site.baseurl }}/writing">all writing →</a>
+
+---
+
+## things i like
+
+a small list of talks, books, and films i keep coming back to.
+
+<a class="internal-link all-writing" href="{{ site.baseurl }}/likes">see the list →</a>
 
 ---
 
