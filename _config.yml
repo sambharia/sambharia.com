@@ -1,4 +1,9 @@
 title:               Siddharth Sambharia
+description:         "Writing about technology, AI, and ideas. Working at Portkey."
+author:              Siddharth Sambharia
+twitter_username:    siddhxrth10
+og_image:            /images/me.jpg
+
 include:             ['_pages']
 exclude:             ['_includes/notes_graph.json']
 # You may need to change the base URL depending on your deploy configuration.

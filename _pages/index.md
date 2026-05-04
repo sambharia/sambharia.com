@@ -7,7 +7,6 @@ permalink: /
 
 <div class="home-profile">
   <img src="{{ site.baseurl }}/images/me.jpg" alt="Siddharth Sambharia" class="profile-photo">
-  <h2 class="profile-name">Siddharth Sambharia</h2>
   <p class="profile-links">
     <a href="https://x.com/siddhxrth10">X</a> · <a href="https://github.com/siddharthsambharia-portkey">GitHub</a> · <a href="https://www.linkedin.com/in/siddharthsambharia">LinkedIn</a> · <a href="mailto:sam.siddharth10@gmail.com">Email</a>
   </p>

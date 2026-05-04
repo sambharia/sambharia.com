@@ -1,43 +1,12 @@
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="{{ site.author }}">
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
-
-  <meta property="og:site_name" content="{{ site.title }}">
-
-  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
-
-  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
-
-  {% if page.excerpt %}
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}"/>
-  {% else %}
-  <meta property="og:description" content="{{ site.title | strip_html | strip_newlines | truncate: 160 }}"/>
-  {% endif %}
-
-  {% if page.title %}
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:type" content="article">
-  {% else %}
-  <meta property="og:title" content="{{ site.title }}">
-  <meta property="og:type" content="website">
-  {% endif %}
-
-  {% if page.date %}
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  <meta property="article:author" content="{{ site.url }}/">
-  {% endif %}
-
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-
-  {% if page.image %}
-  <meta property="og:image" content="{{ site.url }}{{ page.image }}">
-  {% endif %}
-
+  <!-- Title -->
   <title>
     {% if page.id == "home" %}
       {{ site.title }}
@@ -45,4 +14,108 @@
       {{ page.title }} &mdash; {{ site.title }}
     {% endif %}
   </title>
+
+  <!-- Description: prefer page excerpt, fall back to site description -->
+  {% capture page_description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+  <meta name="description" content="{{ page_description }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/me.jpg">
+  <meta name="theme-color" content="#f7f6f2">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  {% if page.title and page.id != "home" %}
+  <meta property="og:title" content="{{ page.title }} &mdash; {{ site.title }}">
+  <meta property="og:type" content="article">
+  {% else %}
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:type" content="website">
+  {% endif %}
+  <meta property="og:description" content="{{ page_description }}">
+  {% if page.image %}
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
+  <meta property="og:image:alt" content="{{ page.title }}">
+  {% else %}
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.og_image }}">
+  <meta property="og:image:alt" content="{{ site.title }}">
+  {% endif %}
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+  {% if page.title and page.id != "home" %}
+  <meta name="twitter:title" content="{{ page.title }} &mdash; {{ site.title }}">
+  {% else %}
+  <meta name="twitter:title" content="{{ site.title }}">
+  {% endif %}
+  <meta name="twitter:description" content="{{ page_description }}">
+  {% if page.image %}
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
+  {% else %}
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ site.og_image }}">
+  {% endif %}
+
+  <!-- Article dates (for posts/notes) -->
+  {% if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:author" content="{{ site.url }}/">
+  {% endif %}
+  {% if page.last_modified_at %}
+  <meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
+  {% endif %}
+
+  <!-- JSON-LD Structured Data -->
+  {% if page.id == "home" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.author }}",
+    "url": "{{ site.url }}",
+    "image": "{{ site.url }}{{ site.baseurl }}/images/me.jpg",
+    "description": "{{ site.description }}",
+    "sameAs": [
+      "https://x.com/{{ site.twitter_username }}"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Portkey",
+      "url": "https://portkey.ai"
+    }
+  }
+  </script>
+  {% elsif page.layout == "note" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title | escape }}",
+    "description": "{{ page_description | escape }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
+    {% if page.last_modified_at %}"dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",{% endif %}
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.author }}",
+      "url": "{{ site.url }}"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "{{ site.author }}",
+      "url": "{{ site.url }}"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ page.url }}"
+    }
+  }
+  </script>
+  {% endif %}
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
