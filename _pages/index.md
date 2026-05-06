@@ -12,7 +12,7 @@ permalink: /
   </p>
 </div>
 
-i work at [Portkey](https://portkey.ai) - 7th hire, now acquired by Palo Alto Networks - and do side projects on weekends. I have been lucky to discover the work of inspiring people from around the world early in my life, which has greatly influenced my own work and ideas
+i work at [Portkey](https://portkey.ai) — 7th hire, now part of Palo Alto Networks — one of the fastest growing startups in the llmops space. i do a mix of marketing, product, engineering and developer experience.
 
 i’m most active on [X](https://x.com/siddhxrth10) (sometimes more than i would like)
 
