@@ -6,6 +6,12 @@ permalink: /likes
 
 <ul class="likes-list">
   <li>
+    <h2>The Bitter Lesson - Rich Sutton</h2>
+    <p class="like-links">
+      <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">read</a>
+    </p>
+  </li>
+  <li>
     <h2>Richard Hamming - You and Your Research</h2>
     <p>One of the best talks on doing important work.</p>
     <p class="like-links">
