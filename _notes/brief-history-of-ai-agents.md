@@ -193,8 +193,6 @@ if you're building today: start with a workflow. reach for the agentic loop only
 
 https://x.com/sambharia/status/2043703343453987133?s=20
 
-https://x.com/sambharia/status/2008784631370498262?s=20
-
 https://x.com/Vtrivedy10/status/2031408954517971368
 
 https://www.humanlayer.dev/blog/12-factor-agents
