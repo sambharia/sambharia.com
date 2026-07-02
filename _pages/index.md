@@ -8,13 +8,13 @@ permalink: /
 <div class="home-profile">
   <img src="{{ site.baseurl }}/images/me.jpg" alt="Siddharth Sambharia" class="profile-photo">
   <p class="profile-links">
-    <a href="https://x.com/siddhxrth10">X</a> · <a href="https://github.com/siddharthsambharia-portkey">GitHub</a> · <a href="https://www.linkedin.com/in/siddharthsambharia">LinkedIn</a> · <a href="mailto:sam.siddharth10@gmail.com">Email</a>
+    <a href="https://x.com/sambharia">X</a> · <a href="https://github.com/sambharia">GitHub</a> · <a href="https://www.linkedin.com/in/sambharia">LinkedIn</a> · <a href="mailto:sam.siddharth10@gmail.com">Email</a>
   </p>
 </div>
 
 i work at [Portkey](https://portkey.ai) — 7th hire, now part of Palo Alto Networks — one of the fastest growing startups in the llmops space. i do a mix of marketing, product, engineering and developer experience.
 
-i’m most active on [X](https://x.com/siddhxrth10) (sometimes more than i would like)
+i’m most active on [X](https://x.com/sambharia) (sometimes more than i would like)
 
 ---
 
