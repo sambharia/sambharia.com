@@ -8,11 +8,11 @@ google_analytics:    G-NY98ZNQCHH
 
 include:             ['_pages']
 exclude:             ['_includes/notes_graph.json']
-# You may need to change the base URL depending on your deploy configuration.
-
-# Add these two lines - replace with your values
-baseurl: '/siddhxrth-tech-obsidian'  # Your repository name
-url: 'https://siddhxrth.com'  # Your GitHub Pages URL
+# Deployed to a custom domain (see CNAME) via Netlify.
+# baseurl must be empty for a root-domain deploy; url is the canonical origin
+# used for canonical tags, Open Graph, JSON-LD, sitemap, feed and llms.txt.
+baseurl: ''
+url: 'https://sambharia.com'
 
 # If you are using a host that cannot resolve URLs that do
 # not end with .html (such as Neocities), set this to 'true'.
@@ -32,6 +32,18 @@ relative_permalinks: false
 
 plugins:
   - jekyll-last-modified-at
+  - jekyll-sitemap
+
+# llms.txt generation (custom plugin: _plugins/llms_txt_generator.rb).
+# Everything below is optional — the plugin auto-generates from your notes
+# if you leave it alone. You never need to edit this when adding a new post.
+llms:
+  # Short blockquote summary shown at the top of /llms.txt
+  summary: >-
+    Personal site and digital garden of Siddharth Sambharia — essays and notes
+    on AI, LLMs, agents, and building things. Working at Portkey.
+  # Also emit /llms-full.txt with the full markdown of every note inlined.
+  full: true
 
 sass:
   sass_dir:          _sass

@@ -1,0 +1,34 @@
+---
+# Atom feed of all notes, newest first. Auto-generated on every build — new
+# notes appear here with no manual work. Served at /feed.xml.
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title | xml_escape }}</title>
+  <subtitle>{{ site.description | xml_escape }}</subtitle>
+  <link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="{{ site.url }}{{ site.baseurl }}/" rel="alternate" type="text/html" />
+  <id>{{ site.url }}{{ site.baseurl }}/feed.xml</id>
+  {% assign notes = site.notes | sort: "date" | reverse %}
+  {% if notes.first %}
+  <updated>{{ notes.first.last_modified_at | date_to_xmlschema }}</updated>
+  {% endif %}
+  <author>
+    <name>{{ site.author | xml_escape }}</name>
+    <uri>{{ site.url }}{{ site.baseurl }}/</uri>
+  </author>
+  {% for note in notes %}
+  <entry>
+    <title>{{ note.title | xml_escape }}</title>
+    <link href="{{ site.url }}{{ site.baseurl }}{{ note.url }}" rel="alternate" type="text/html" title="{{ note.title | xml_escape }}" />
+    <id>{{ site.url }}{{ site.baseurl }}{{ note.url }}</id>
+    {% if note.date %}<published>{{ note.date | date_to_xmlschema }}</published>{% endif %}
+    <updated>{{ note.last_modified_at | date_to_xmlschema }}</updated>
+    {% if note.excerpt %}<summary type="html">{{ note.excerpt | strip_html | strip_newlines | truncate: 300 | xml_escape }}</summary>{% endif %}
+    <content type="html">{{ note.content | xml_escape }}</content>
+    {% for tag in note.tags %}<category term="{{ tag | xml_escape }}" />{% endfor %}
+  </entry>
+  {% endfor %}
+</feed>
