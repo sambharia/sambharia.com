@@ -5,11 +5,9 @@ last_modified_at: 2026-07-08
 tags: [ai]
 ---
 
-_This is the first post in my series of posts on AI. In this series I plan on sharing what I've learned, what I'm reading and what interests me._
-
 AI is a fascinating technology. I still remember the first time I tried the Davinci model in 2020 from OpenAI, and I was flabbergasted by how it could artificially write blocks of meaningful text.
 
-Since then a lot has changed. We had ChatGPT in 2022, GPT-4 in 2023, Claude Code in 2025, OpenClaw in 2026, to now whatever is the current track of [AI engineering](https://www.ai.engineer/).
+Since then a lot has changed. We had ChatGPT in 2022, GPT-4 in 2023, Claude Code in 2025, OpenClaw in 2026, to now whatever is the current track of [AI Engineer](https://www.ai.engineer/).
 
 I was born in 2003, by the time I got to university all the biggest technological revolutions of the last decade -- the internet, the iPhone, cloud were past their inflection point. But AI is different, it's the only [General-purpose technologies](https://en.wikipedia.org/wiki/General-purpose_technology) that I've witnessed from the launch of ChatGPT to becoming fastest growing consumer technology ever created.
 
