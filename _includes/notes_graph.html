@@ -31,6 +31,8 @@
     background: #fcfcfc;
     border-radius: 4px;
     height: auto;
+    max-width: 640px;
+    margin: 0 auto;
   }
   
   #graph-wrapper > svg {
@@ -51,13 +53,13 @@
         "sha512-FHsFVKQ/T1KWJDGSbrUhTJyS1ph3eRrxI228ND0EGaEp6v4a/vGwPWd3Dtd/+9cI7ccofZvl/wulICEurHN1pg==";
       document.body.appendChild(oScript);
       oScript.onload = () => {
-        const MINIMAL_NODE_SIZE = 8;
-        const MAX_NODE_SIZE = 12;
+        const MINIMAL_NODE_SIZE = 5;
+        const MAX_NODE_SIZE = 8;
         const ACTIVE_RADIUS_FACTOR = 1.5;
         const STROKE = 1;
-        const FONT_SIZE = 16;
+        const FONT_SIZE = 11;
         const TICKS = 200;
-        const FONT_BASELINE = 40;
+        const FONT_BASELINE = 26;
         const MAX_LABEL_LENGTH = 50;
 
         const graphData = {% include notes_graph.json %}
@@ -170,20 +172,22 @@
           return true;
         };
 
+        const GRAPH_HEIGHT = 260;
+
         const graphWrapper = document.getElementById('graph-wrapper')
         const element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
-        element.setAttribute("height", window.innerHeight * 0.8);
+        element.setAttribute("height", GRAPH_HEIGHT);
         graphWrapper.appendChild(element);
 
         const reportWindowSize = () => {
-          element.setAttribute("width", window.innerWidth);
-          element.setAttribute("height", window.innerHeight);
+          element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
+          element.setAttribute("height", GRAPH_HEIGHT);
         };
 
         window.onresize = reportWindowSize;
 
-        const svg = d3.select("svg");
+        const svg = d3.select(element);
         const width = Number(svg.attr("width"));
         const height = Number(svg.attr("height"));
         let zoomLevel = 1;
@@ -198,10 +202,10 @@
             d3
               .forceLink(linksData)
               .id((d) => d.id)
-              .distance(70)
+              .distance(45)
           )
           .force("center", d3.forceCenter(width / 2, height / 2))
-          .force("collision", d3.forceCollide().radius(80))
+          .force("collision", d3.forceCollide().radius(45))
           .stop();
 
         const g = svg.append("g");

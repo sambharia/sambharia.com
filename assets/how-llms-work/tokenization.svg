@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 470" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="440" height="470" fill="#ffffff"/>
+
+  <!-- stage 1: original text -->
+  <text x="220" y="34" text-anchor="middle" font-size="13" fill="#9a9a9a">original text</text>
+  <rect x="120" y="48" width="200" height="58" rx="12" fill="#f0f0ee" stroke="#d5d5d3" stroke-width="1.5"/>
+  <text x="220" y="85" text-anchor="middle" font-size="28" font-weight="600" fill="#1a1a1a">symbiosis</text>
+
+  <!-- split arrows -->
+  <g stroke="#bdbdbd" stroke-width="1.5" fill="none">
+    <path d="M220 108 V132 H90 V162"/>
+    <path d="M220 108 V162"/>
+    <path d="M220 108 V132 H350 V162"/>
+  </g>
+  <g fill="#bdbdbd">
+    <path d="M90 166 l-4 -7 h8 z"/>
+    <path d="M220 166 l-4 -7 h8 z"/>
+    <path d="M350 166 l-4 -7 h8 z"/>
+  </g>
+
+  <!-- stage 2: split into tokens -->
+  <text x="220" y="152" text-anchor="middle" font-size="13" fill="#9a9a9a">split into subword tokens</text>
+  <g stroke-width="1.5">
+    <rect x="48"  y="168" width="84" height="58" rx="12" fill="#dce7f7" stroke="#b9cdea"/>
+    <rect x="178" y="168" width="84" height="58" rx="12" fill="#e1efd8" stroke="#c2ddb0"/>
+    <rect x="308" y="168" width="84" height="58" rx="12" fill="#fdf1d2" stroke="#ecd79b"/>
+  </g>
+  <g font-size="24" font-weight="600" fill="#1a1a1a" text-anchor="middle">
+    <text x="90"  y="205">sym</text>
+    <text x="220" y="205">bio</text>
+    <text x="350" y="205">sis</text>
+  </g>
+
+  <!-- down arrows -->
+  <g stroke="#bdbdbd" stroke-width="1.5" fill="none">
+    <path d="M90 228 V282"/>
+    <path d="M220 228 V282"/>
+    <path d="M350 228 V282"/>
+  </g>
+  <g fill="#bdbdbd">
+    <path d="M90 286 l-4 -7 h8 z"/>
+    <path d="M220 286 l-4 -7 h8 z"/>
+    <path d="M350 286 l-4 -7 h8 z"/>
+  </g>
+
+  <!-- stage 3: token IDs -->
+  <text x="220" y="272" text-anchor="middle" font-size="13" fill="#9a9a9a">token IDs (integers)</text>
+  <g stroke-width="1.5">
+    <rect x="48"  y="288" width="84" height="58" rx="12" fill="#e8ddf6" stroke="#cdb9ec"/>
+    <rect x="178" y="288" width="84" height="58" rx="12" fill="#e8ddf6" stroke="#cdb9ec"/>
+    <rect x="308" y="288" width="84" height="58" rx="12" fill="#e8ddf6" stroke="#cdb9ec"/>
+  </g>
+  <g font-size="24" font-weight="600" fill="#1a1a1a" text-anchor="middle" font-family="'SF Mono', Menlo, Consolas, monospace">
+    <text x="90"  y="325">5183</text>
+    <text x="220" y="325">8482</text>
+    <text x="350" y="325">642</text>
+  </g>
+
+  <!-- caption -->
+  <text x="220" y="408" text-anchor="middle" font-size="16" fill="#555">
+    symbiosis<tspan dx="10">&#8594;</tspan><tspan dx="10" font-family="'SF Mono', Menlo, Consolas, monospace" fill="#5b3fa0">[5183, 8482, 642]</tspan>
+  </text>
+</svg>

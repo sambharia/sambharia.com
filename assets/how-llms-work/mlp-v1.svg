@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="640" height="420" fill="#ffffff"/>
+
+  <!-- connections: input -> hidden -->
+  <g stroke="#e0e0e0" stroke-width="1">
+    <line x1="90" y1="140" x2="320" y2="60"/><line x1="90" y1="140" x2="320" y2="114"/><line x1="90" y1="140" x2="320" y2="168"/><line x1="90" y1="140" x2="320" y2="222"/><line x1="90" y1="140" x2="320" y2="276"/><line x1="90" y1="140" x2="320" y2="330"/>
+    <line x1="90" y1="200" x2="320" y2="60"/><line x1="90" y1="200" x2="320" y2="114"/><line x1="90" y1="200" x2="320" y2="168"/><line x1="90" y1="200" x2="320" y2="222"/><line x1="90" y1="200" x2="320" y2="276"/><line x1="90" y1="200" x2="320" y2="330"/>
+    <line x1="90" y1="260" x2="320" y2="60"/><line x1="90" y1="260" x2="320" y2="114"/><line x1="90" y1="260" x2="320" y2="168"/><line x1="90" y1="260" x2="320" y2="222"/><line x1="90" y1="260" x2="320" y2="276"/><line x1="90" y1="260" x2="320" y2="330"/>
+  </g>
+
+  <!-- connections: hidden -> output -->
+  <g stroke="#e0e0e0" stroke-width="1">
+    <line x1="320" y1="60"  x2="550" y2="140"/><line x1="320" y1="60"  x2="550" y2="200"/><line x1="320" y1="60"  x2="550" y2="260"/>
+    <line x1="320" y1="114" x2="550" y2="140"/><line x1="320" y1="114" x2="550" y2="200"/><line x1="320" y1="114" x2="550" y2="260"/>
+    <line x1="320" y1="168" x2="550" y2="140"/><line x1="320" y1="168" x2="550" y2="200"/><line x1="320" y1="168" x2="550" y2="260"/>
+    <line x1="320" y1="222" x2="550" y2="140"/><line x1="320" y1="222" x2="550" y2="200"/><line x1="320" y1="222" x2="550" y2="260"/>
+    <line x1="320" y1="276" x2="550" y2="140"/><line x1="320" y1="276" x2="550" y2="200"/><line x1="320" y1="276" x2="550" y2="260"/>
+    <line x1="320" y1="330" x2="550" y2="140"/><line x1="320" y1="330" x2="550" y2="200"/><line x1="320" y1="330" x2="550" y2="260"/>
+  </g>
+
+  <!-- weight labels -->
+  <text x="205" y="30" text-anchor="middle" font-size="15" fill="#2f5d9f" font-weight="600">W<tspan dy="4" font-size="11">1</tspan><tspan dy="-4" font-size="15" fill="#9a9a9a" font-weight="400">  expand</tspan></text>
+  <text x="435" y="30" text-anchor="middle" font-size="15" fill="#2f5d9f" font-weight="600">W<tspan dy="4" font-size="11">2</tspan><tspan dy="-4" font-size="15" fill="#9a9a9a" font-weight="400">  compress</tspan></text>
+
+  <!-- input nodes -->
+  <g stroke="#b9cdea" stroke-width="1.5" fill="#dce7f7">
+    <circle cx="90" cy="140" r="22"/>
+    <circle cx="90" cy="200" r="22"/>
+    <circle cx="90" cy="260" r="22"/>
+  </g>
+
+  <!-- hidden nodes: green = on (fires), grey = off (zero) -->
+  <g stroke-width="1.5">
+    <circle cx="320" cy="60"  r="18" fill="#cfe8c0" stroke="#9cc47f"/>
+    <circle cx="320" cy="114" r="18" fill="#f4f4f2" stroke="#d5d5d3"/>
+    <circle cx="320" cy="168" r="18" fill="#cfe8c0" stroke="#9cc47f"/>
+    <circle cx="320" cy="222" r="18" fill="#cfe8c0" stroke="#9cc47f"/>
+    <circle cx="320" cy="276" r="18" fill="#f4f4f2" stroke="#d5d5d3"/>
+    <circle cx="320" cy="330" r="18" fill="#f4f4f2" stroke="#d5d5d3"/>
+  </g>
+
+  <!-- output nodes -->
+  <g stroke="#cdb9ec" stroke-width="1.5" fill="#e8ddf6">
+    <circle cx="550" cy="140" r="22"/>
+    <circle cx="550" cy="200" r="22"/>
+    <circle cx="550" cy="260" r="22"/>
+  </g>
+
+  <!-- column labels -->
+  <text x="90"  y="315" text-anchor="middle" font-size="14" fill="#1a1a1a" font-weight="600">input</text>
+  <text x="90"  y="333" text-anchor="middle" font-size="12" fill="#9a9a9a">768 dims</text>
+
+  <text x="320" y="368" text-anchor="middle" font-size="14" fill="#1a1a1a" font-weight="600">hidden + GeLU</text>
+  <text x="320" y="386" text-anchor="middle" font-size="12" fill="#9a9a9a">3072 dims</text>
+
+  <text x="550" y="315" text-anchor="middle" font-size="14" fill="#1a1a1a" font-weight="600">output</text>
+  <text x="550" y="333" text-anchor="middle" font-size="12" fill="#9a9a9a">768 dims</text>
+
+  <!-- legend -->
+  <circle cx="160" cy="404" r="7" fill="#cfe8c0" stroke="#9cc47f" stroke-width="1.5"/>
+  <text x="174" y="409" font-size="12" fill="#555">neuron on (fires)</text>
+  <circle cx="330" cy="404" r="7" fill="#f4f4f2" stroke="#d5d5d3" stroke-width="1.5"/>
+  <text x="344" y="409" font-size="12" fill="#555">off (zeroed)</text>
+</svg>

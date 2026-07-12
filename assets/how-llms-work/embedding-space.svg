@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 540" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="axHead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0 0 L7 4 L0 8 z" fill="#cbcbcb"/>
+    </marker>
+    <marker id="blueHead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0 0 L7 4 L0 8 z" fill="#2f5d9f"/>
+    </marker>
+    <marker id="amberHead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0 0 L7 4 L0 8 z" fill="#d99521"/>
+    </marker>
+  </defs>
+
+  <rect width="660" height="540" fill="#ffffff"/>
+
+  <!-- floor plane (dim1 x dim3) -->
+  <polygon points="120,400 420,455 630,325 330,270" fill="#f7f7f5"/>
+
+  <!-- floor grid -->
+  <g stroke="#ececea" stroke-width="1">
+    <line x1="219" y1="418.15" x2="429" y2="288.15"/>
+    <line x1="318" y1="436.3"  x2="528" y2="306.3"/>
+    <line x1="189.3" y1="357.1" x2="489.3" y2="412.1"/>
+    <line x1="258.6" y1="314.2" x2="558.6" y2="369.2"/>
+  </g>
+
+  <!-- 3D axes -->
+  <g stroke="#cbcbcb" stroke-width="1.6" fill="none">
+    <line x1="120" y1="400" x2="435"   y2="457.75" marker-end="url(#axHead)"/>
+    <line x1="120" y1="400" x2="120"   y2="82"      marker-end="url(#axHead)"/>
+    <line x1="120" y1="400" x2="340.5" y2="263.5"   marker-end="url(#axHead)"/>
+  </g>
+
+  <!-- axis labels -->
+  <text x="445" y="470" text-anchor="start"  font-size="13" fill="#8a8a8a">animal-ness (dim 1)</text>
+  <text x="120" y="70"  text-anchor="middle" font-size="13" fill="#8a8a8a">vehicle-ness (dim 2)</text>
+  <text x="348" y="256" text-anchor="start"  font-size="13" fill="#8a8a8a">dim 3</text>
+
+  <!-- drop lines (height above floor = vehicle-ness) -->
+  <g stroke-width="1.2" stroke-dasharray="4 4">
+    <line x1="192" y1="100" x2="192" y2="379.5" stroke="#ecc98a"/>
+    <line x1="558" y1="314" x2="558" y2="345.5" stroke="#aac1e2"/>
+    <line x1="532" y1="303" x2="532" y2="349.5" stroke="#aac1e2"/>
+  </g>
+
+  <!-- "very close" highlight around cat & kitten -->
+  <ellipse cx="545" cy="309" rx="34" ry="26" fill="none" stroke="#a9c0e0" stroke-width="1.3" stroke-dasharray="5 5"/>
+
+  <!-- car vector (vehicle) -->
+  <g stroke="#d99521" stroke-width="2.4" fill="none">
+    <line x1="120" y1="400" x2="192" y2="100" marker-end="url(#amberHead)"/>
+  </g>
+
+  <!-- cat & kitten vectors (animals) -->
+  <g stroke="#2f5d9f" stroke-width="2.4" fill="none">
+    <line x1="120" y1="400" x2="558" y2="314" marker-end="url(#blueHead)"/>
+    <line x1="120" y1="400" x2="532" y2="303" marker-end="url(#blueHead)"/>
+  </g>
+
+  <!-- origin -->
+  <circle cx="120" cy="400" r="3.5" fill="#1a1a1a"/>
+
+  <!-- word labels -->
+  <g font-size="15" font-weight="600">
+    <text x="180" y="94"  text-anchor="end"    fill="#b57912">car</text>
+    <text x="570" y="317" text-anchor="start"  fill="#264f86">cat</text>
+    <text x="520" y="292" text-anchor="end"    fill="#264f86">kitten</text>
+  </g>
+
+  <!-- caption -->
+  <text x="330" y="522" text-anchor="middle" font-size="12.5" fill="#9a9a9a" font-style="italic">
+    &#8220;cat&#8221; and &#8220;kitten&#8221; point almost the same way; &#8220;car&#8221; points elsewhere
+  </text>
+</svg>

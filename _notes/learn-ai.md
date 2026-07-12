@@ -36,5 +36,5 @@ Here's why I believe understanding AI matters:
 This is an exciting time to build. Like every technology wave before it, this is my attempt to document what I'm learning in the open — sharing notes, and along the way meeting new people, running into new ideas, and earning some distribution.
 
 I'll post once a week: fundamentals, what's new, and whatever I can't stop thinking about.
-Next up: how LLMs work at a fundamental level.
+Next up: [how LLMs work at a fundamental level](https://sambharia.com/how-llms-work).
 
