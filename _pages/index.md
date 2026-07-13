@@ -12,7 +12,9 @@ permalink: /
   </p>
 </div>
 
-i work at [Portkey](https://portkey.ai) — 7th hire, now part of Palo Alto Networks — one of the fastest growing startups in the llmops space. i do a mix of marketing, product, engineering and developer experience.
+i'm a generalist doing a mix of product, marketing and engineering. i work at [Portkey](https://portkey.ai), now part of Palo Alto Networks.
+
+i'm exploring a few things — reach out if we should work together.
 
 i’m most active on [X](https://x.com/sambharia) (sometimes more than i would like)
 
@@ -43,14 +45,6 @@ i’m most active on [X](https://x.com/sambharia) (sometimes more than i would l
 
 ---
 
-## things i like
-
-a small list of talks, books, and films i keep coming back to.
-
-<a class="internal-link all-writing" href="{{ site.baseurl }}/likes">see the list →</a>
-
----
-
 ## cool people
 
 i like the idea of writer builders mentioned [here](https://www.workingtheorys.com/p/writer-builder)
@@ -59,9 +53,9 @@ there are few things that can give you asymmetric returns in life. this website 
 
 here’s a list of cool people on the internet that inspired me to write this (with some web presence):
 
-Anu Atluru · Paras Chopra · Paul Graham · Alexey Guzey · Dwarkesh Patel · Patrick Collison · Nat Friedman
+Alexey Guzey · Anu Atluru · Dwarkesh Patel · Nat Friedman · Paras Chopra · Patrick Collison · Paul Graham
 
-(too lazy to add links, you can find them yourself!)in
+(too lazy to add links, you can find them yourself)
 
 <style>
   .wrapper { max-width: 42em; margin: 0 auto; }

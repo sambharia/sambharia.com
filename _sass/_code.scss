@@ -1,13 +1,21 @@
+$code-font: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+  "Liberation Mono", monospace;
+
 .highlight  {
-  background: #f8f8f8;
-  padding: 1px 1em;
-  border-radius: 3px;
-  font-size: 1em;
-  font-size: 0.9em;
+  background: #f6f7f9;
+  border: 1px solid #ebedf0;
+  padding: 0.9em 1.1em;
+  border-radius: 8px;
+  font-family: $code-font;
+  font-size: 0.85em;
+  line-height: 1.55;
   overflow: auto;
-  margin: 1em -1em;
+  margin: 1.35em 0;
   code{
     padding: 0;
+    background: none;
+    border: 0;
+    font-size: inherit;
   }
 }
 

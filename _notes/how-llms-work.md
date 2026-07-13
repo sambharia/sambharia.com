@@ -7,6 +7,8 @@ tags: [ai, llms]
 
 <div class="how-llms-work-post" markdown="1">
 
+<img class="post-header" src="/assets/how-llms-work/image.png" alt="Classical painting of philosophers gathered in debate around a table">
+
 <p>When ChatGPT launched in late 2022, it opened a whole new set of possibilities for what computers can do. Fast forward to today, AI has already started contributing to the world in many ways, from writing code to speeding up scientific progress. Over the past few years AI models have kept getting better, and so has everything you can do with them.</p>
 
 <p>And yet, most of us still don't know how this technology actually works.</p>
@@ -159,7 +161,7 @@ tags: [ai, llms]
 
 <p>The input to the next transformer block is just the two added together:</p>
 
-<pre><code>X&#8271 = WTE[token]  (what it is)
+<pre><code>X<sub>i</sub> = WTE[token]  (what it is)
    + WPE[i]      (where it sits)</code></pre>
 
 <p>For &ldquo;dog&rdquo; sitting in position 1, the final embedding vector that gets passed to the next stage is:</p>
@@ -483,13 +485,22 @@ Head 2 &rarr; [0.16, 0.58]</code></pre>
 </div>
 
 <style>
+  .how-llms-work-post .post-header {
+    width: 100%;
+    max-height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 0 1.8em;
+  }
   .how-llms-work-post .toc {
-    background: #f4f4f2;
-    border: 1px solid #e2e2e2;
+    background: #f6f7ff;
+    border: 1px solid #e0e2fb;
+    border-left: 3px solid #2a2ecd;
     border-radius: 8px;
-    padding: 20px 24px;
+    padding: 20px 24px 20px 22px;
   }
   .how-llms-work-post .toc ol { margin: 0; padding-left: 1.2em; }
+  .how-llms-work-post .toc ol li::marker { color: #2a2ecd; }
   .how-llms-work-post table {
     border-collapse: collapse;
     width: 100%;
