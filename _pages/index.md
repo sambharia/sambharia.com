@@ -45,6 +45,19 @@ i’m most active on [X](https://x.com/sambharia) (sometimes more than i would l
 
 ---
 
+## projects
+
+<ul class="projects-list">
+  <li>
+    <a class="internal-link" href="{{ site.baseurl }}/prism/"><strong>Prism</strong></a>
+    <span>Make the web yours. Reshape any website with natural language.</span>
+  </li>
+</ul>
+
+<a class="internal-link all-projects" href="{{ site.baseurl }}/projects">all projects →</a>
+
+---
+
 ## cool people
 
 i like the idea of writer builders mentioned [here](https://www.workingtheorys.com/p/writer-builder)
@@ -82,5 +95,25 @@ Alexey Guzey · Anu Atluru · Dwarkesh Patel · Nat Friedman · Paras Chopra · 
     color: hsl(0, 0%, 45%);
     border-bottom: none;
   }
-  .all-writing:visited { color: hsl(0, 0%, 45%); }
+  .all-writing:visited, .all-projects:visited { color: hsl(0, 0%, 45%); }
+  .projects-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5em 0 0.8em;
+  }
+  .projects-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    margin: 0.35em 0;
+  }
+  .projects-list span {
+    color: hsl(0, 0%, 40%);
+    font-size: 0.88em;
+  }
+  .all-projects {
+    font-size: 0.88em;
+    color: hsl(0, 0%, 45%);
+    border-bottom: none;
+  }
 </style>
