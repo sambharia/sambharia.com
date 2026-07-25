@@ -20,15 +20,6 @@ i’m most active on [X](https://x.com/sambharia) (sometimes more than i would l
 
 ---
 
-## things i believe
-
-- the cost of energy will come close to 0 in the coming decades
-- number of iterations is the key to successful things
-- good artists copy, great artists steal
-- agency is the most important thing if intelligence becomes democratized
-
----
-
 ## writing
 
 <ul class="writing-list">
@@ -49,12 +40,22 @@ i’m most active on [X](https://x.com/sambharia) (sometimes more than i would l
 
 <ul class="projects-list">
   <li>
-    <a class="internal-link" href="{{ site.baseurl }}/prism/"><strong>Prism</strong></a>
-    <span>Make the web yours. Reshape any website with natural language.</span>
+    <a class="internal-link prism-project-link" href="{{ site.baseurl }}/prism/"><strong>Prism</strong></a>
+    <span class="project-arrow" aria-hidden="true">→</span>
+    <span>AI Chrome extension that lets you ship features to any website.</span>
   </li>
 </ul>
 
 <a class="internal-link all-projects" href="{{ site.baseurl }}/projects">all projects →</a>
+
+---
+
+## things i believe
+
+- the cost of energy will come close to 0 in the coming decades
+- number of iterations is the key to successful things
+- good artists copy, great artists steal
+- agency is the most important thing if intelligence becomes democratized
 
 ---
 
@@ -103,9 +104,17 @@ Alexey Guzey · Anu Atluru · Dwarkesh Patel · Nat Friedman · Paras Chopra · 
   }
   .projects-list li {
     display: flex;
-    flex-direction: column;
-    gap: 0.2em;
+    flex-wrap: wrap;
+    gap: 0.35em;
+    align-items: baseline;
     margin: 0.35em 0;
+  }
+  .prism-project-link {
+    padding-left: 0;
+    border-bottom: none;
+  }
+  .project-arrow {
+    color: hsl(0, 0%, 55%);
   }
   .projects-list span {
     color: hsl(0, 0%, 40%);

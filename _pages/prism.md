@@ -3,28 +3,27 @@ layout: page
 title: Prism — Make the web yours
 id: prism
 permalink: /prism/
-excerpt: Prism is a Chrome extension that lets you reshape any website with natural language.
+excerpt: AI Chrome extension that lets you ship features to any website.
 image: /assets/prism-logo-glass.png
 ---
 
 <main class="prism-page">
-  <div class="prism-project-profile">
-    <img class="prism-logo" src="{{ site.baseurl }}/assets/prism-logo-glass.png" alt="Prism logo">
-    <nav class="prism-nav" aria-label="Prism links">
-      <a href="https://github.com/sambharia/prism">github</a>
-      <span aria-hidden="true">·</span>
-      <a class="internal-link" href="#manifesto">manifesto</a>
-      <span aria-hidden="true">·</span>
-      <a class="internal-link" href="{{ site.baseurl }}/prism/quickstart/">quickstart</a>
-    </nav>
-  </div>
-
   <header class="prism-hero">
-    <h1>hi, this is prism.</h1>
-    <p class="prism-subtitle">it’s a chrome extension i made to make the web yours.</p>
-    <p class="prism-intro">change any website using plain english—hide distractions, add useful buttons, restyle pages, or build the feature you wish existed.</p>
+  <nav class="prism-nav" aria-label="Prism links">
+    <a href="https://github.com/sambharia/prism">github</a>
+    <span aria-hidden="true">·</span>
+    <a class="internal-link" href="#manifesto">manifesto</a>
+    <span aria-hidden="true">·</span>
+    <a class="internal-link" href="{{ site.baseurl }}/prism/quickstart/">quickstart</a>
+  </nav>
 
-    <p class="prism-principles">open-source.<br>bring your own model.<br>your web, your way.</p>
+    <h1>hi, this is prism.</h1>
+
+    <div class="prism-pitch">
+      <p class="prism-subtitle">it’s a chrome extension i made to make the web yours.</p>
+      <p class="prism-intro">add a button, change the theme, remove clutter—kinda like shipping a new feature to any website.</p>
+      <p class="prism-principles">open-source.<br>bring your own model.<br>your web, your way.</p>
+    </div>
 
     <form
       class="prism-signup"
@@ -37,13 +36,12 @@ image: /assets/prism-logo-glass.png
     >
       <label class="prism-sr-only" for="prism-email">email address</label>
       <div class="prism-form-row">
-        <input id="prism-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" aria-describedby="prism-form-note prism-form-status" required>
+        <input id="prism-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" aria-describedby="prism-form-status" required>
         <button type="submit">download prism</button>
       </div>
       <input type="hidden" name="source" value="sambharia.com/prism">
       <input class="prism-honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
       <input type="hidden" name="_subject" value="New Prism download">
-      <p class="prism-form-note" id="prism-form-note">experimental preview. no spam—just occasional prism updates. <a href="https://github.com/sambharia/prism/releases/tag/v0.1.0-alpha.1">release notes</a>.</p>
       <p class="prism-form-status" id="prism-form-status" role="status" aria-live="polite"></p>
     </form>
 
@@ -101,26 +99,24 @@ image: /assets/prism-logo-glass.png
     <p class="prism-kicker">manifesto</p>
     <h2 id="manifesto-title">i want the original internet back.</h2>
 
-    <p>the original internet incentivized creativity. people from all over the world had their own place on it, connected through open protocols like smtp, http, and tcp/ip.</p>
+    <p>the original internet incentivized creativity. people all over the world had their own place on it, connected by open protocols like smtp, http, and tcp/ip.</p>
 
-    <p>this idea of the open internet was slowly taken away from us by platforms, with everyone trying to lock us inside their own ecosystem. over the last decade, platforms have taken power away from people while stuffing everything with ads.</p>
+    <p>that idea was slowly taken from us by platforms, each one trying to lock us inside its own ecosystem.</p>
 
-    <p>but that’s enough. i want the original internet back—a place where people made it their own, like drivers in tokyo who take a stock car and customize it until it becomes theirs.</p>
+    <p>but that’s enough.</p>
+
+    <p>i want the original internet back, a place where people made it their own, like drivers in tokyo who take a stock car and customize it until it becomes theirs.</p>
 
     <p><em>have you ever used a website and thought:</em></p>
     <ul>
       <li><em>why can’t i change this?</em></li>
-      <li><em>why isn’t there a button that does what i need?</em></li>
-      <li><em>why must i use software the way someone else decided?</em></li>
+      <li><em>why didn’t they think of this?</em></li>
+      <li><em>why can’t i choose what i see?</em></li>
     </ul>
 
-    <p>ai gives us agency. you can take something you’ve imagined and make it real. you can reshape the web around you and make the software you use feel more personal.</p>
+    <p>answering these questions led me to prism. prism is a chrome extension that lets you ship features to any website in natural language, using ai. it lets you dream about what the web could be, then make it real.</p>
 
-    <p>i like the idea behind steve jobs’ line, “real artists ship.” i built prism to help you ship things directly onto the web.</p>
-
-    <p>prism lets you dream about what the web could be, then make it real.</p>
-
-    <p class="prism-closing"><a href="#prism-signup">download prism</a> <span aria-hidden="true">·</span> <a href="https://github.com/sambharia/prism">view the source</a></p>
+    <p class="prism-closing">try it today. <a href="#prism-signup">download prism</a> <span aria-hidden="true">·</span> <a href="https://github.com/sambharia/prism">view the source</a></p>
   </article>
 </main>
 
@@ -227,20 +223,18 @@ image: /assets/prism-logo-glass.png
     --blue: #2a2ecd;
     color: var(--ink);
   }
-  .prism-project-profile { margin: 0 0 2.2em; }
-  .prism-logo { width: 72px; height: 72px; margin: 0 0 0.75em; border-radius: 4px; object-fit: cover; }
-  .prism-nav { display: flex; flex-wrap: wrap; gap: 0.35em; margin: 0; color: var(--muted); font-size: 0.8em; }
+  .prism-nav { display: flex; flex-wrap: wrap; gap: 0.35em; margin: 0 0 1.25em; color: var(--muted); font-size: 0.8em; }
   .prism-nav a, .prism-nav a:visited { padding: 0; border-bottom: none; color: var(--muted); }
   .prism-nav a::after { content: ''; }
   .prism-nav a:hover { color: var(--blue) !important; background: none; }
-  .prism-hero { padding: 0 0 2.5em; }
+  .prism-hero { padding: 0 0 2.25em; }
   .prism-hero h1, .prism-manifesto h2 { color: var(--ink); letter-spacing: -0.025em; }
-  .prism-hero h1 { margin: 0 0 0.35em; font-size: 2.35rem; line-height: 1.12; }
-  .prism-subtitle, .prism-intro, .prism-principles { color: var(--muted); font-size: 1.15em; line-height: 1.55; }
-  .prism-subtitle { margin: 0 0 1.5em; }
-  .prism-intro { max-width: 38em; margin: 0 0 1.4em; }
-  .prism-principles { margin: 0 0 1.5em; }
-  .prism-signup { max-width: 31em; margin: 1.5em 0 0; }
+  .prism-hero h1 { margin: 0 0 0.5em; font-size: 2.35rem; line-height: 1.08; }
+  .prism-pitch { margin: 0 0 0.65em; }
+  .prism-subtitle, .prism-intro, .prism-principles { max-width: 38em; color: var(--muted); font-size: 1.15em; line-height: 1.55; }
+  .prism-subtitle, .prism-intro { margin: 0 0 0.75em; }
+  .prism-principles { margin: 0; }
+  .prism-signup { max-width: 31em; margin: 1.25em 0 0; }
   .prism-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
   .prism-honeypot { position: absolute !important; left: -9999px !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important; }
   .prism-form-row { display: flex; gap: 0.55em; }
@@ -249,11 +243,11 @@ image: /assets/prism-logo-glass.png
   .prism-form-row button { padding: 0.72em 1em; border: 1px solid var(--blue); border-radius: 4px; background: var(--blue); color: #fff; font: inherit; cursor: pointer; }
   .prism-form-row button:hover { background: #2024ad; }
   .prism-form-row button:disabled { cursor: wait; opacity: 0.65; }
-  .prism-form-note, .prism-form-status { margin: 0.55em 0 0; color: var(--muted); font-size: 0.75em; line-height: 1.45; }
+  .prism-form-status { margin: 0.55em 0 0; color: var(--muted); font-size: 0.75em; line-height: 1.45; }
   .prism-form-status:empty { display: none; }
   .prism-form-status.is-error { color: #a23b31; }
   .prism-form-status.is-success { color: #25713a; }
-  .prism-demo { margin: 2em 0 0; }
+  .prism-demo { width: min(100%, 36em); margin: 1.5em 0 0; }
   .prism-video-wrap { position: relative; }
   .prism-video-wrap iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: 4px; background: #111; }
   .prism-demo figcaption { margin-top: 0.5em; color: var(--muted); font-size: 0.8em; font-style: italic; }
@@ -279,8 +273,8 @@ image: /assets/prism-logo-glass.png
   .prism-manifesto ul { padding-left: 1.4em; }
   .prism-closing { margin-top: 2em; }
   @media (max-width: 560px) {
-    .prism-project-profile { margin-bottom: 1.8em; }
     .prism-hero h1 { font-size: 2rem; }
+    .prism-subtitle { font-size: 1em; }
     .prism-form-row { flex-direction: column; }
     .prism-form-row button { width: 100%; }
     .prism-showcase-list { grid-template-columns: repeat(3, minmax(12em, 1fr)); overflow-x: auto; padding-bottom: 0.5em; scroll-snap-type: x proximity; }

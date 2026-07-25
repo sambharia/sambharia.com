@@ -7,7 +7,7 @@ permalink: /projects
 <ul class="projects-list">
   <li>
     <a class="internal-link" href="{{ site.baseurl }}/prism/"><strong>Prism</strong></a>
-    <p>Make the web yours. Reshape any website with natural language.</p>
+    <p>AI Chrome extension that lets you ship features to any website.</p>
   </li>
 </ul>
 
