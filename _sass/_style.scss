@@ -243,6 +243,24 @@ nav {
   }
 }
 
+@media (max-width: 640px) {
+  nav {
+    .nav-wrapper {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0.35em;
+    }
+
+    .nav-title {
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      gap: 1.25em;
+    }
+  }
+}
+
 #notes-entry-container {
   display: grid;
   grid-gap: 2.5em;
