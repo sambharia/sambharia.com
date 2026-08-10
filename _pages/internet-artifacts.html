@@ -1,0 +1,69 @@
+---
+layout: internet-artifacts
+title: How the Internet Happened
+permalink: /internet-artifacts/
+excerpt: A visual history of the commercial Internet, told through 21 original artifacts from 1971 to 2002.
+image: /assets/internet-artifacts/yahoo-1994.png
+---
+
+<header class="story-brand">
+  <a class="internal-link" href="{{ site.baseurl }}/">Siddharth Sambharia</a>
+  <span>How the Internet Happened</span>
+  <span>21 artifacts · 1971—2002</span>
+</header>
+
+<nav class="story-index" aria-label="Internet artifact chapters">
+  {% for artifact in site.data.internet_artifacts %}
+    <a class="internal-link" href="#artifact-{{ artifact.label }}" aria-label="{{ artifact.label }}: {{ artifact.title | escape }}">
+      <span class="story-thumb">
+        {% if artifact.document %}
+          <b>AD</b>
+        {% else %}
+          <img src="{{ site.baseurl }}/assets/internet-artifacts/{{ artifact.images.first }}" alt="" width="80" height="56">
+        {% endif %}
+      </span>
+      <strong>{{ artifact.label }}</strong>
+      <small>{{ artifact.year }}</small>
+    </a>
+  {% endfor %}
+</nav>
+
+<main class="artifact-story">
+  {% for artifact in site.data.internet_artifacts %}
+    <article class="artifact-chapter color-{{ forloop.index0 | modulo: 4 }}" id="artifact-{{ artifact.label }}">
+      <div class="artifact-stage{% if artifact.images.size > 1 %} is-pair{% endif %}">
+        <span class="artifact-ghost" aria-hidden="true">{{ artifact.label }}</span>
+        {% if artifact.document %}
+          <div class="document-artifact">
+            <small>Original announcement · October 2000</small>
+            <strong>Google launches self-service advertising.</strong>
+            <a href="{{ artifact.source }}" target="_blank" rel="noreferrer">Read the original ↗</a>
+          </div>
+        {% else %}
+          {% for image in artifact.images %}
+            <img src="{{ site.baseurl }}/assets/internet-artifacts/{{ image }}" alt="{{ artifact.alt | escape }}{% if artifact.images.size > 1 %}, view {{ forloop.index }}{% endif %}" loading="lazy">
+          {% endfor %}
+        {% endif %}
+      </div>
+
+      <div class="artifact-details">
+        <aside class="artifact-stats">
+          <strong>{{ artifact.label }}</strong>
+          <dl>
+            <div><dt>Date</dt><dd>{{ artifact.year }}</dd></div>
+            <div><dt>Artifact</dt><dd>{{ artifact.source_name }}</dd></div>
+          </dl>
+        </aside>
+        <div class="artifact-copy">
+          <p class="eyebrow">Chapter {{ artifact.label }} of {{ site.data.internet_artifacts.size }}</p>
+          <h1>{{ artifact.title }}</h1>
+          <p>{{ artifact.fact }}</p>
+          <footer>
+            <span>{{ artifact.caption }}</span>
+            <a href="{{ artifact.source }}" target="_blank" rel="noreferrer">Original source ↗</a>
+          </footer>
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+</main>

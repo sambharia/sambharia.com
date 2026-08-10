@@ -1,0 +1,208 @@
+- label: "01"
+  year: "1971"
+  title: "The first network email"
+  fact: "Ray Tomlinson sent a message between two computers and chose @ to separate a person from their machine."
+  images: ["ray-tomlinson.jpg"]
+  alt: "Ray Tomlinson, inventor of network email"
+  caption: "Ray Tomlinson, who gave network email its @ sign."
+  source: "https://commons.wikimedia.org/wiki/File:Ray_Tomlinson.jpg"
+  source_name: "Wikimedia Commons"
+
+- label: "02"
+  year: "1991"
+  title: "The first website"
+  fact: "Tim Berners-Lee combined HTML, URLs, HTTP, a server and a browser. Hyperlinks made the network navigable."
+  images: ["first-website-1991.png"]
+  alt: "The first World Wide Web page"
+  caption: "The restored first public Web page."
+  source: "https://info.cern.ch/hypertext/WWW/TheProject.html"
+  source_name: "CERN"
+
+- label: "03"
+  year: "1993—94"
+  title: "The browser becomes visual"
+  fact: "Mosaic made the Web graphical and point-and-click; Netscape turned that breakthrough into the doorway for millions."
+  images: ["mosaic.png", "netscape.png"]
+  alt: "NCSA Mosaic and Netscape Navigator browser screenshots"
+  caption: "NCSA Mosaic 1.2 beside Netscape Navigator 1.22."
+  source: "https://commons.wikimedia.org/wiki/File:NCSA_Mosaic_Browser_Screenshot.png"
+  source_name: "Wikimedia Commons"
+
+- label: "04"
+  year: "1993—96"
+  title: "AOL arrives in the mail"
+  fact: "Trial discs and the greeting ‘You’ve got mail’ made going online feel like a household ritual."
+  images: ["aol-cds.jpg"]
+  alt: "A collection of AOL promotional discs"
+  caption: "AOL trial discs—the physical artifact that put millions online."
+  source: "https://commons.wikimedia.org/wiki/File:AOL_promotional_CDs_in_Canada.jpg"
+  source_name: "Wikimedia Commons"
+
+- label: "05"
+  year: "1990s"
+  title: "AOL makes chat central"
+  fact: "Public rooms gathered around topics; screen names doubled as email addresses, game identities and chat-room name tags."
+  images: ["aol-1996.png"]
+  alt: "AOL website in 1996"
+  caption: "AOL’s 1996 Web presence during its mass-market rise."
+  source: "https://www.webdesignmuseum.org/gallery/aol-1996"
+  source_name: "Web Design Museum"
+
+- label: "06"
+  year: "Spring 1994"
+  title: "Two students start a link list"
+  fact: "Jerry Yang and David Filo began collecting interesting sites from adjoining Stanford cubicles instead of finishing their PhDs."
+  images: ["yahoo-1994.png"]
+  alt: "Yahoo homepage preserved from 1994"
+  caption: "The link list that grew out of Jerry and David’s hobby."
+  source: "https://www.webdesignmuseum.org/gallery/yahoo-1994"
+  source_name: "Web Design Museum"
+
+- label: "07"
+  year: "1994"
+  title: "Jerry’s Guide becomes Yahoo"
+  fact: "Before search ranked the Web, Yahoo’s human-made folders gave it a map."
+  images: ["yahoo-1994.png"]
+  alt: "Yahoo homepage preserved from 1994"
+  caption: "Yahoo in 1994: a hand-built directory of the Web."
+  source: "https://www.webdesignmuseum.org/gallery/yahoo-1994"
+  source_name: "Web Design Museum"
+
+- label: "08"
+  year: "27 Oct 1994"
+  title: "The first banner ad"
+  fact: "HotWired’s clickable AT&T banner proved that attention on a free Web page could be sold and measured."
+  images: ["first-banner-1994.png"]
+  alt: "The first AT&T banner ad on HotWired"
+  caption: "The surviving HotWired / AT&T banner artifact."
+  source: "https://www.webdesignmuseum.org/web-design-history/the-first-web-banner-1994"
+  source_name: "Web Design Museum"
+
+- label: "09"
+  year: "1995"
+  title: "Amazon opens an endless shelf"
+  fact: "Amazon was not the first online shop. Its difference was using the Web to offer far more books than a physical store could hold."
+  images: ["amazon-1995.png"]
+  alt: "Amazon homepage preserved from 1995"
+  caption: "Amazon’s archived 1995 homepage."
+  source: "https://www.webdesignmuseum.org/gallery/amazon-1995"
+  source_name: "Web Design Museum"
+
+- label: "10"
+  year: "1995"
+  title: "AuctionWeb turns ratings into trust"
+  fact: "Sellers mailed fees to Pierre Omidyar; public feedback made strangers accountable. The famous Pez origin story was later press mythology."
+  images: ["pierre-omidyar-1995.png"]
+  alt: "Pierre Omidyar in 1995"
+  caption: "Pierre Omidyar in the year he launched AuctionWeb."
+  source: "https://www.ebayinc.com/company/our-history/"
+  source_name: "eBay archive"
+
+- label: "11"
+  year: "1995—96"
+  title: "Anyone can build a homepage"
+  fact: "GeoCities offered free pages in themed ‘neighborhoods’—publishing without a server or HTML expertise."
+  images: ["geocities-1996.png"]
+  alt: "GeoCities website in 1996"
+  caption: "GeoCities in 1996, organized as a city of personal pages."
+  source: "https://www.webdesignmuseum.org/gallery/geocities-1996"
+  source_name: "Web Design Museum"
+
+- label: "12"
+  year: "1995—99"
+  title: "The browser becomes a radio"
+  fact: "AudioNet—later Broadcast.com—streamed radio, sports and live events through a browser."
+  images: ["broadcast-1999.png"]
+  alt: "Broadcast.com website in 1999"
+  caption: "Broadcast.com in 1999, before Yahoo’s acquisition."
+  source: "https://www.webdesignmuseum.org/gallery/broadcast-1999"
+  source_name: "Web Design Museum"
+
+- label: "13"
+  year: "4 Jul 1996"
+  title: "Email escapes the institution"
+  fact: "Hotmail let anyone choose an address and read it in any browser. Every sent message carried an invitation to join."
+  images: ["hotmail-1996.png"]
+  alt: "Hotmail homepage preserved from 1996"
+  caption: "Hotmail’s homepage at launch in 1996."
+  source: "https://www.webdesignmuseum.org/gallery/hotmail-1996"
+  source_name: "Web Design Museum"
+
+- label: "14"
+  year: "1999—2000"
+  title: "The mascot outlives the business"
+  fact: "Pets.com made its sock puppet famous while losing money on every heavy bag of pet food it shipped."
+  images: ["pets-sock-puppet.jpg"]
+  alt: "The Pets.com sock puppet mascot"
+  caption: "The Pets.com sock puppet, preserved by the Computer History Museum."
+  source: "https://commons.wikimedia.org/wiki/File:Pets.com_Sock_Puppet_(12935451763).jpg"
+  source_name: "Wikimedia Commons"
+
+- label: "15"
+  year: "1998"
+  title: "Google ranks the Web"
+  fact: "PageRank treated links as signals of authority, helping the best-connected useful pages rise above simple keyword matches."
+  images: ["google-first-server.jpg"]
+  alt: "Google’s first production server rack"
+  caption: "Google’s first production server rack, built from commodity hardware."
+  source: "https://commons.wikimedia.org/wiki/File:Google%27s_First_Server_(2370844217).jpg"
+  source_name: "Wikimedia Commons"
+
+- label: "16"
+  year: "1999"
+  title: "Napster makes music searchable"
+  fact: "MP3s, Winamp and larger drives came first. Napster connected them to strangers’ collections and made abundance feel instant."
+  images: ["napster-1999.png"]
+  alt: "Napster website preserved from 1999"
+  caption: "Napster’s website in 1999."
+  source: "https://www.webdesignmuseum.org/gallery/napster-in-1999"
+  source_name: "Web Design Museum"
+
+- label: "17"
+  year: "2001—03"
+  title: "iTunes rebuilds the music habit"
+  fact: "The iPod made a library portable; the iTunes Store made individual songs easy to buy for 99 cents."
+  images: ["itunes-2001.png"]
+  alt: "Apple iTunes website in 2001"
+  caption: "Apple’s iTunes page in 2001."
+  source: "https://www.webdesignmuseum.org/gallery/itunes-in-2001"
+  source_name: "Web Design Museum"
+
+- label: "18"
+  year: "1998—2002"
+  title: "Netflix turns the queue into a store"
+  fact: "Netflix replaced late fees and store shelves with a subscription, a Web queue and DVDs delivered by mail."
+  images: ["netflix-2002.png"]
+  alt: "Netflix website in 2002"
+  caption: "Netflix’s archived 2002 website."
+  source: "https://www.webdesignmuseum.org/gallery/netflix-2002"
+  source_name: "Web Design Museum"
+
+- label: "19"
+  year: "1993—99"
+  title: "Ordinary life becomes publishable"
+  fact: "Reverse-chronological personal updates evolved from hand-built logs into tools like Blogger: newest post first."
+  images: ["blogger-1999.png"]
+  alt: "Blogger website in 1999"
+  caption: "Blogger at its 1999 launch."
+  source: "https://www.webdesignmuseum.org/gallery/blogger-1999"
+  source_name: "Web Design Museum"
+
+- label: "20"
+  year: "1999—2000"
+  title: "An email address becomes a wallet"
+  fact: "PayPal gave small eBay sellers a cash register: send money to an email address instead of mailing a cheque."
+  images: ["paypal-2000.png"]
+  alt: "PayPal homepage preserved from 2000"
+  caption: "PayPal’s homepage in 2000."
+  source: "https://www.webdesignmuseum.org/gallery/paypal-2000"
+  source_name: "Web Design Museum"
+
+- label: "21"
+  year: "2000—02"
+  title: "Google makes ads feel like answers"
+  fact: "AdWords combined self-service text ads with click pricing and relevance—the scalable business model behind modern search."
+  document: true
+  caption: "Google’s original self-service advertising announcement."
+  source: "https://googlepress.blogspot.com/2000/10/google-launches-self-service.html"
+  source_name: "Google press archive"
