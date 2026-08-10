@@ -6,6 +6,10 @@ permalink: /projects
 
 <ul class="projects-list">
   <li>
+    <a class="internal-link" href="{{ site.baseurl }}/internet-artifacts/"><strong>How the Internet Happened</strong></a>
+    <p>A visual history of the commercial Internet, told through 21 original artifacts.</p>
+  </li>
+  <li>
     <a class="internal-link" href="{{ site.baseurl }}/prism/"><strong>Prism</strong></a>
     <p>AI Chrome extension that lets you ship features to any website.</p>
   </li>

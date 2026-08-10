@@ -40,7 +40,12 @@ i’m most active on [X](https://x.com/sambharia) (sometimes more than i would l
 
 <ul class="projects-list">
   <li>
-    <a class="internal-link prism-project-link" href="{{ site.baseurl }}/prism/"><strong>Prism</strong></a>
+    <a class="internal-link project-link" href="{{ site.baseurl }}/internet-artifacts/"><strong>How the Internet Happened</strong></a>
+    <span class="project-arrow" aria-hidden="true">→</span>
+    <span>A visual history of the commercial Internet, told through 21 original artifacts.</span>
+  </li>
+  <li>
+    <a class="internal-link project-link" href="{{ site.baseurl }}/prism/"><strong>Prism</strong></a>
     <span class="project-arrow" aria-hidden="true">→</span>
     <span>AI Chrome extension that lets you ship features to any website.</span>
   </li>
@@ -109,7 +114,7 @@ Alexey Guzey · Anu Atluru · Dwarkesh Patel · Nat Friedman · Paras Chopra · 
     align-items: baseline;
     margin: 0.35em 0;
   }
-  .prism-project-link {
+  .project-link {
     padding-left: 0;
     border-bottom: none;
   }
