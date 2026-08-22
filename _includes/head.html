@@ -2,7 +2,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#ffffff">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="{{ page.robots | default: 'index, follow' }}">
   <meta name="author" content="{{ site.author }}">
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
@@ -42,6 +42,10 @@
   {% if page.image %}
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
   <meta property="og:image:alt" content="{{ page.title }}">
+  {% if page.image_width and page.image_height %}
+  <meta property="og:image:width" content="{{ page.image_width }}">
+  <meta property="og:image:height" content="{{ page.image_height }}">
+  {% endif %}
   {% else %}
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.og_image }}">
   <meta property="og:image:alt" content="{{ site.title }}">
@@ -49,7 +53,7 @@
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter / X Card -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="{{ page.twitter_card | default: 'summary' }}">
   <meta name="twitter:site" content="@{{ site.twitter_username }}">
   <meta name="twitter:creator" content="@{{ site.twitter_username }}">
   {% if page.title and page.id != "home" %}
@@ -60,6 +64,7 @@
   <meta name="twitter:description" content="{{ page_description }}">
   {% if page.image %}
   <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
+  <meta name="twitter:image:alt" content="{{ page.title }}">
   {% else %}
   <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ site.og_image }}">
   {% endif %}
@@ -78,19 +83,36 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "{{ site.author }}",
-    "url": "{{ site.url }}",
-    "image": "{{ site.url }}{{ site.baseurl }}/images/me.jpg",
-    "description": "{{ site.description }}",
-    "sameAs": [
-      "https://x.com/{{ site.twitter_username }}"
-    ],
-    "worksFor": {
+    "@graph": [{
+      "@type": "Person",
+      "name": "{{ site.author }}",
+      "url": "{{ site.url }}",
+      "image": "{{ site.url }}{{ site.baseurl }}/images/me.jpg",
+      "description": "{{ site.description }}",
+      "sameAs": [
+        "https://x.com/{{ site.twitter_username }}",
+        "https://github.com/sambharia",
+        "https://www.linkedin.com/in/sambharia"
+      ],
+      "worksFor": { "@id": "{{ site.url }}/#portkey" }
+    }, {
       "@type": "Organization",
+      "@id": "{{ site.url }}/#sambharia",
+      "name": "Sambharia",
+      "url": "{{ site.url }}",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "sam.siddharth10@gmail.com"
+      },
+      "address": { "@type": "PostalAddress", "addressCountry": "IN" }
+    }, {
+      "@type": "Organization",
+      "@id": "{{ site.url }}/#portkey",
       "name": "Portkey",
       "url": "https://portkey.ai"
     }
+    ]
   }
   </script>
   {% elsif page.layout == "note" %}
