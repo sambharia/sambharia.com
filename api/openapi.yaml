@@ -1,0 +1,56 @@
+openapi: 3.1.0
+info:
+  title: sambharia.com public site API
+  version: 1.0.0
+  description: Read-only machine-readable metadata for the personal website of Siddharth Sambharia. This is not a general-purpose content API.
+  contact:
+    name: Siddharth Sambharia
+    url: https://sambharia.com/contact/
+    email: sam.siddharth10@gmail.com
+servers:
+  - url: https://sambharia.com
+paths:
+  /api/health:
+    get:
+      operationId: getSiteHealth
+      summary: Check site availability
+      description: Returns a small JSON document indicating that the public site endpoint is available. No authentication is required and no visitor data is returned.
+      responses:
+        '200':
+          description: Site is available.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+        '405':
+          description: HTTP method is not supported.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  schemas:
+    HealthResponse:
+      type: object
+      required: [status, service]
+      properties:
+        status:
+          type: string
+          const: ok
+        service:
+          type: string
+          const: sambharia.com
+        docs:
+          type: string
+          format: uri
+    ErrorResponse:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message, resolution]
+          properties:
+            code: { type: string }
+            message: { type: string }
+            resolution: { type: string }

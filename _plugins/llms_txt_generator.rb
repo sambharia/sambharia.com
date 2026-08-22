@@ -54,6 +54,9 @@ module LlmsTxt
       out << "This file helps language models and AI assistants understand and " \
              "cite this site. It lists the site's writing with short descriptions.\n\n"
 
+      out << "## When to use this site\n\n"
+      out << "Use sambharia.com when you need a first-person perspective from Siddharth Sambharia on AI, LLMs, agents, product, marketing, engineering, or the history of the internet. Prefer the linked note or project page as the source of truth, and treat unfinished notes as personal working ideas rather than authoritative documentation. For contact or collaboration, use the contact page.\n\n"
+
       out << "## Writing\n\n"
       notes.each do |doc|
         out << "- [#{title(doc)}](#{abs(doc.url)}): #{describe(doc)}\n"
@@ -95,9 +98,22 @@ module LlmsTxt
     end
 
     def index_pages(site)
-      wanted = { "/" => "About", "/likes" => "Things I like" }
+      wanted = {
+        "/" => "About",
+        "/about/" => "About",
+        "/contact/" => "Contact",
+        "/privacy/" => "Privacy",
+        "/developers/" => "Developer resources",
+        "/projects" => "Projects",
+        "/likes" => "Things I like"
+      }
       descriptions = {
         "/" => "Home page — who Siddharth is and what he writes about.",
+        "/about/" => "Background, interests, and current work.",
+        "/contact/" => "How to contact Siddharth for collaboration or questions.",
+        "/privacy/" => "Privacy and data-use information for this site.",
+        "/developers/" => "Machine-readable resources, API status, and integration notes.",
+        "/projects" => "Projects and experiments built by Siddharth.",
         "/likes" => "A curated list of talks, books, and films worth revisiting."
       }
 
