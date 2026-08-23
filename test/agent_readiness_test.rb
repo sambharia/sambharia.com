@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "minitest/autorun"
-require "yaml"
 
 ROOT = File.expand_path("..", __dir__)
 
@@ -24,32 +23,13 @@ class AgentReadinessTest < Minitest::Test
     assert_includes not_found, "# 404"
   end
 
-  def test_trust_and_developer_pages_are_published
-    %w[_pages/about.md _pages/contact.md _pages/privacy.md _pages/developers.md].each do |path|
-      body = read(path)
-      assert_match(/permalink:\s+\//, body)
-      assert_operator body.split("---", 3).last.length, :>, 500, path
+  def test_removed_agent_pages_and_api_are_not_present
+    %w[_pages/about.md _pages/contact.md _pages/privacy.md _pages/developers.md api/openapi.yaml netlify/functions/health.js].each do |path|
+      refute File.exist?(File.join(ROOT, path)), "#{path} should be removed"
     end
-  end
-
-  def test_openapi_has_operation_ids_and_structured_errors
-    spec = YAML.safe_load(read("api/openapi.yaml"))
-    operation = spec.dig("paths", "/api/health", "get")
-    assert_equal "getSiteHealth", operation["operationId"]
-    assert operation["description"].length > 20
-    error = spec.dig("components", "schemas", "ErrorResponse", "properties", "error", "properties")
-    assert %w[code message resolution].all? { |field| error.key?(field) }
-  end
-
-  def test_public_endpoint_returns_json_errors
-    function = read("netlify/functions/health.js")
-    assert_includes function, "METHOD_NOT_ALLOWED"
-    assert_includes function, "application/json; charset=utf-8"
-    assert_includes read("netlify.toml"), 'from = "/api/health"'
-  end
-
-  def test_accept_variants_are_cache_safe
-    assert_includes read("_headers"), "Vary: Accept, Accept-Encoding"
+    refute_includes read("netlify.toml"), "/api/health"
+    refute_includes read("_plugins/llms_txt_generator.rb"), "/developers/"
+    refute_includes read("_plugins/llms_txt_generator.rb"), "contact page"
   end
 
   def test_homepage_schema_has_organization_contact_and_address
