@@ -12,10 +12,6 @@ permalink: /
   </p>
 </div>
 
-# Siddharth Sambharia
-
-This is the personal website of Siddharth Sambharia, a generalist working across product, marketing, and engineering. I write about technology, artificial intelligence, large language models, software agents, and the process of building useful things. The site is also a digital garden: a place for unfinished ideas, essays, notes, experiments, and projects that become clearer through writing.
-
 i'm a generalist doing a mix of product, marketing and engineering. i work at [Portkey](https://portkey.ai), now part of Palo Alto Networks.
 
 i'm exploring a few things — reach out if we should work together.
