@@ -4,8 +4,3 @@
 
 [functions]
   directory = "netlify/functions"
-
-[[redirects]]
-  from = "/api/health"
-  to = "/.netlify/functions/health"
-  status = 200
