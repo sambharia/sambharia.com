@@ -41,6 +41,12 @@ permalink: /likes
       <a href="https://www.imdb.com/title/tt1285016/">view on IMDb</a>
     </p>
   </li>
+  <li>
+    <h2>[ad] MrBeast leaked memo</h2>
+    <p class="like-links">
+      <a href="{{ site.baseurl }}/assets/mrbeast-production-memo.pdf">read the memo</a>
+    </p>
+  </li>
 </ul>
 
 <style>
