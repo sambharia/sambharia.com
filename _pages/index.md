@@ -44,11 +44,6 @@ i’m most active on [X](https://x.com/sambharia) (sometimes more than i would l
     <span class="project-arrow" aria-hidden="true">→</span>
     <span>AI Chrome extension that lets you ship features to any website.</span>
   </li>
-  <li>
-    <a class="internal-link prism-project-link" href="{{ site.baseurl }}/internet/"><strong>How the Internet Happened</strong></a>
-    <span class="project-arrow" aria-hidden="true">→</span>
-    <span>A timeline of the internet era, notes from Brian McCullough's book.</span>
-  </li>
 </ul>
 
 <a class="internal-link all-projects" href="{{ site.baseurl }}/projects">all projects →</a>
