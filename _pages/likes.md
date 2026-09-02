@@ -13,7 +13,6 @@ permalink: /likes
   </li>
   <li>
     <h2>Richard Hamming - You and Your Research</h2>
-    <p>One of the best talks on doing important work.</p>
     <p class="like-links">
       <a href="https://blog.samaltman.com/you-and-your-research">read on Sam Altman's blog</a>
       <span>·</span>
@@ -22,27 +21,24 @@ permalink: /likes
   </li>
   <li>
     <h2>Steve Jobs - Stanford commencement speech</h2>
-    <p>Stay hungry. Stay foolish.</p>
     <p class="like-links">
       <a href="https://www.youtube.com/watch?v=UF8uR6Z6KLc">watch on YouTube</a>
     </p>
   </li>
   <li>
     <h2>The Almanack of Naval Ravikant</h2>
-    <p>A useful collection on wealth, judgment, and happiness.</p>
     <p class="like-links">
       <a href="https://www.navalmanack.com/">read online</a>
     </p>
   </li>
   <li>
     <h2>The Social Network</h2>
-    <p>A movie I keep coming back to.</p>
     <p class="like-links">
       <a href="https://www.imdb.com/title/tt1285016/">view on IMDb</a>
     </p>
   </li>
   <li>
-    <h2>[ad] MrBeast leaked memo</h2>
+    <h2>MrBeast leaked memo</h2>
     <p class="like-links">
       <a href="{{ site.baseurl }}/assets/mrbeast-production-memo.pdf">read the memo</a>
     </p>
