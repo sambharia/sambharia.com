@@ -25,7 +25,9 @@ description: A running log of some of my favorite photos.
     {% endfor %}
   </div>
 
-  <p class="photos-note">More to come. Add images to <code>assets/photos/</code> and list them in <code>_data/photos.yml</code>.</p>
+  {% if site.data.photos == empty %}
+    <p class="photos-empty">No photos yet.</p>
+  {% endif %}
 </div>
 
 <style>
@@ -102,10 +104,10 @@ description: A running log of some of my favorite photos.
     margin-top: 0.45em;
   }
 
-  .photos-note {
+  .photos-empty {
     border-top: 1px solid hsl(0, 0%, 85%);
     color: hsl(0, 0%, 50%);
-    font-size: 0.8em;
+    font-size: 0.95em;
     margin-top: 2.5em;
     padding-top: 1em;
   }
