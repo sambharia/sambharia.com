@@ -4,79 +4,9 @@ title: things i like
 permalink: /likes
 ---
 
-<ul class="likes-list">
-  <li>
-    <h2>The Bitter Lesson - Rich Sutton</h2>
-    <p class="like-links">
-      <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">read</a>
-    </p>
-  </li>
-  <li>
-    <h2>Richard Hamming - You and Your Research</h2>
-    <p class="like-links">
-      <a href="https://blog.samaltman.com/you-and-your-research">read on Sam Altman's blog</a>
-      <span>·</span>
-      <a href="https://www.youtube.com/watch?v=a1zDuOPkMSw">watch on YouTube</a>
-    </p>
-  </li>
-  <li>
-    <h2>Steve Jobs - Stanford commencement speech</h2>
-    <p class="like-links">
-      <a href="https://www.youtube.com/watch?v=UF8uR6Z6KLc">watch on YouTube</a>
-    </p>
-  </li>
-  <li>
-    <h2>The Almanack of Naval Ravikant</h2>
-    <p class="like-links">
-      <a href="https://www.navalmanack.com/">read online</a>
-    </p>
-  </li>
-  <li>
-    <h2>The Social Network</h2>
-    <p class="like-links">
-      <a href="https://www.imdb.com/title/tt1285016/">view on IMDb</a>
-    </p>
-  </li>
-  <li>
-    <h2>MrBeast leaked memo</h2>
-    <p class="like-links">
-      <a href="{{ site.baseurl }}/assets/mrbeast-production-memo.pdf">read the memo</a>
-    </p>
-  </li>
-</ul>
-
-<style>
-  .likes-list {
-    list-style: none;
-    padding: 0;
-    margin: 1em 0 0;
-  }
-
-  .likes-list li {
-    margin: 0 0 1.6em;
-    padding-bottom: 1.2em;
-    border-bottom: 1px solid hsl(0, 0%, 85%);
-  }
-
-  .likes-list li:last-child {
-    border-bottom: none;
-  }
-
-  .likes-list h2 {
-    font-size: 1em;
-    margin: 0 0 0.25em;
-  }
-
-  .likes-list p {
-    margin: 0.2em 0;
-  }
-
-  .like-links {
-    font-size: 0.88em;
-  }
-
-  .like-links span {
-    color: hsl(0, 0%, 55%);
-    margin: 0 0.25em;
-  }
-</style>
+- [The Bitter Lesson - Rich Sutton](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
+- Richard Hamming - You and Your Research ([read on Sam Altman's blog](https://blog.samaltman.com/you-and-your-research) · [watch on YouTube](https://www.youtube.com/watch?v=a1zDuOPkMSw))
+- [Steve Jobs - Stanford commencement speech](https://www.youtube.com/watch?v=UF8uR6Z6KLc)
+- [The Almanack of Naval Ravikant](https://www.navalmanack.com/)
+- [The Social Network](https://www.imdb.com/title/tt1285016/)
+- [MrBeast leaked memo]({{ site.baseurl }}/assets/mrbeast-production-memo.pdf)
