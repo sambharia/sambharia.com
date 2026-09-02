@@ -30,11 +30,11 @@ permalink: /likes
   }
 
   .likes-list li {
-    margin-bottom: 1.4em;
+    margin-bottom: 1em;
     padding-left: 0.35em;
     font-size: 1.05em;
     letter-spacing: 0.01em;
-    line-height: 1.85;
+    line-height: 1.7;
   }
 
   .likes-list li:last-child {
