@@ -5,7 +5,6 @@ permalink: /likes
 ---
 
 <div class="likes-page">
-  <h1>things i like</h1>
   <ul class="likes-list">
     <li><a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">The Bitter Lesson - Rich Sutton</a></li>
     <li>
@@ -22,17 +21,20 @@ permalink: /likes
 
 <style>
   .likes-page {
-    margin: 2.5em auto 3em;
+    margin: 2.75em auto 3.5em;
   }
 
   .likes-list {
-    margin-top: 2em;
+    margin: 0;
     padding-left: 1.45em;
   }
 
   .likes-list li {
-    margin-bottom: 1.25em;
+    margin-bottom: 1.4em;
     padding-left: 0.35em;
+    font-size: 1.05em;
+    letter-spacing: 0.01em;
+    line-height: 1.85;
   }
 
   .likes-list li:last-child {
