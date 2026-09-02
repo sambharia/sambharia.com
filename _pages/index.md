@@ -59,6 +59,19 @@ i’m most active on [X](https://x.com/sambharia) (sometimes more than i would l
 
 ---
 
+## quotes
+
+<ul class="quotes-list">
+  {% for quote in site.data.quotes %}
+    <li>
+      <blockquote>“{{ quote.text }}”</blockquote>
+      <p class="quote-attribution">— {{ quote.author }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+---
+
 ## things i believe
 
 - the cost of energy will come close to 0 in the coming decades
@@ -133,5 +146,25 @@ Alexey Guzey · Anu Atluru · Dwarkesh Patel · Nat Friedman · Paras Chopra · 
     font-size: 0.88em;
     color: hsl(0, 0%, 45%);
     border-bottom: none;
+  }
+  .quotes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5em 0 0;
+  }
+  .quotes-list li {
+    margin: 0 0 1.4em;
+  }
+  .quotes-list li:last-child {
+    margin-bottom: 0;
+  }
+  .quotes-list blockquote {
+    margin: 0;
+    color: hsl(0, 0%, 28%);
+  }
+  .quote-attribution {
+    margin: 0.4em 0 0 1.1em;
+    color: hsl(0, 0%, 50%);
+    font-size: 0.85em;
   }
 </style>
