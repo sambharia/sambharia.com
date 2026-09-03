@@ -10,10 +10,11 @@ class AgentReadinessTest < Minitest::Test
     File.read(File.join(ROOT, path), encoding: "UTF-8")
   end
 
-  def test_homepage_has_server_rendered_heading_and_substantial_copy
+  def test_homepage_retains_original_bio
     homepage = read("_pages/index.md")
-    assert_includes homepage, "# Siddharth Sambharia"
-    assert_operator homepage.gsub(/<!--.*?-->/m, "").length, :>, 500
+    assert_includes homepage, "i'm a generalist doing a mix of product, marketing and engineering."
+    refute_includes homepage, "This is the personal website of Siddharth Sambharia"
+    refute_includes homepage, "# Siddharth Sambharia"
   end
 
   def test_not_found_page_has_recovery_links_and_markdown_body

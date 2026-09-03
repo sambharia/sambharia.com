@@ -4,77 +4,40 @@ title: things i like
 permalink: /likes
 ---
 
-<ul class="likes-list">
-  <li>
-    <h2>The Bitter Lesson - Rich Sutton</h2>
-    <p class="like-links">
-      <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">read</a>
-    </p>
-  </li>
-  <li>
-    <h2>Richard Hamming - You and Your Research</h2>
-    <p>One of the best talks on doing important work.</p>
-    <p class="like-links">
-      <a href="https://blog.samaltman.com/you-and-your-research">read on Sam Altman's blog</a>
-      <span>·</span>
-      <a href="https://www.youtube.com/watch?v=a1zDuOPkMSw">watch on YouTube</a>
-    </p>
-  </li>
-  <li>
-    <h2>Steve Jobs - Stanford commencement speech</h2>
-    <p>Stay hungry. Stay foolish.</p>
-    <p class="like-links">
-      <a href="https://www.youtube.com/watch?v=UF8uR6Z6KLc">watch on YouTube</a>
-    </p>
-  </li>
-  <li>
-    <h2>The Almanack of Naval Ravikant</h2>
-    <p>A useful collection on wealth, judgment, and happiness.</p>
-    <p class="like-links">
-      <a href="https://www.navalmanack.com/">read online</a>
-    </p>
-  </li>
-  <li>
-    <h2>The Social Network</h2>
-    <p>A movie I keep coming back to.</p>
-    <p class="like-links">
-      <a href="https://www.imdb.com/title/tt1285016/">view on IMDb</a>
-    </p>
-  </li>
-</ul>
+<div class="likes-page">
+  <ul class="likes-list">
+    <li><a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">The Bitter Lesson - Rich Sutton</a></li>
+    <li>
+      Richard Hamming - You and Your Research
+      (<a href="https://blog.samaltman.com/you-and-your-research">read on Sam Altman's blog</a> ·
+      <a href="https://www.youtube.com/watch?v=a1zDuOPkMSw">watch on YouTube</a>)
+    </li>
+    <li><a href="https://www.youtube.com/watch?v=UF8uR6Z6KLc">Steve Jobs - Stanford commencement speech</a></li>
+    <li><a href="https://www.navalmanack.com/">The Almanack of Naval Ravikant</a></li>
+    <li><a href="https://www.imdb.com/title/tt1285016/">The Social Network</a></li>
+    <li><a href="{{ site.baseurl }}/assets/mrbeast-production-memo.pdf">MrBeast leaked memo</a></li>
+  </ul>
+</div>
 
 <style>
+  .likes-page {
+    margin: 2.75em auto 3.5em;
+  }
+
   .likes-list {
-    list-style: none;
-    padding: 0;
-    margin: 1em 0 0;
+    margin: 0;
+    padding-left: 1.45em;
   }
 
   .likes-list li {
-    margin: 0 0 1.6em;
-    padding-bottom: 1.2em;
-    border-bottom: 1px solid hsl(0, 0%, 85%);
+    margin-bottom: 1em;
+    padding-left: 0.35em;
+    font-size: 1.05em;
+    letter-spacing: 0.01em;
+    line-height: 1.7;
   }
 
   .likes-list li:last-child {
-    border-bottom: none;
-  }
-
-  .likes-list h2 {
-    font-size: 1em;
-    margin: 0 0 0.25em;
-  }
-
-  .likes-list p {
-    margin: 0.2em 0;
-  }
-
-  .like-links {
-    font-size: 0.88em;
-  }
-
-  .like-links span {
-    color: hsl(0, 0%, 55%);
-    margin: 0 0.25em;
+    margin-bottom: 0;
   }
 </style>
