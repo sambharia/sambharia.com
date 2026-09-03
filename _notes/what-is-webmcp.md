@@ -3,13 +3,16 @@ title: "What is WebMCP?"
 date: 2026-09-03
 last_modified_at: 2026-09-03
 tags: [ai, agents, web, webmcp]
+image: /assets/webmcp/cover.png
+image_width: 1774
+image_height: 887
 ---
 
 <p class="post-kicker">Web</p>
 
 <p class="post-lede">A native interface for AI agents on the web.</p>
 
-![Four explorers sitting beneath a blue planet and a red rock formation in a retro-futurist landscape]({{ site.baseurl }}/assets/webmcp/cover.jpg)
+![What is WebMCP? — abstract blue, purple, pink, and green gradient cover]({{ site.baseurl }}/assets/webmcp/cover.png)
 
 The web is the most important surface for communication and knowledge work today, but it was built with humans as its first-class users. We have designed websites around visual layouts, readable fonts, animations, glimmers, shimmers, and whatnot, while making it harder for bots through CAPTCHAs, rate limits, and other anti-bot measures.
 
