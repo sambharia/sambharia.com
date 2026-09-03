@@ -9,9 +9,7 @@ tags: [ai, agents, web, webmcp]
 
 <p class="post-lede">A native interface for AI agents on the web.</p>
 
-![A Roman bust beside an ASCII desktop computer, representing the web's old interface and its agent-native future]({{ site.baseurl }}/assets/webmcp/cover.jpg)
-
-<p class="post-caption">Cover collage: a public-domain Roman statue by Paolo Neo and a CC0 ASCII computer by Jayvee Enaguas, via <a href="https://commons.wikimedia.org/wiki/File:Statue_roman_emperor.jpg">Wikimedia Commons</a>.</p>
+![Four explorers sitting beneath a blue planet and a red rock formation in a retro-futurist landscape]({{ site.baseurl }}/assets/webmcp/cover.jpg)
 
 The web is the most important surface for communication and knowledge work today, but it was built with humans as its first-class users. We have designed websites around visual layouts, readable fonts, animations, glimmers, shimmers, and whatnot, while making it harder for bots through CAPTCHAs, rate limits, and other anti-bot measures.
 
