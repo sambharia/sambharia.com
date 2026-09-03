@@ -2,14 +2,11 @@
 layout: page
 title: photos
 permalink: /photos
-description: A running log of some of my favorite photos.
 ---
 
 <div class="photos-page">
   <header class="photos-intro">
-    <p class="photos-kicker">a running log</p>
     <h1>photos</h1>
-    <p class="photos-description">Some moments, places, and things I want to remember.</p>
   </header>
 
   <div class="photo-grid">
@@ -32,6 +29,7 @@ description: A running log of some of my favorite photos.
 
 <style>
   .photos-page {
+    font-family: inherit;
     margin-top: 2.8em;
   }
 
@@ -40,24 +38,10 @@ description: A running log of some of my favorite photos.
     max-width: 34em;
   }
 
-  .photos-kicker {
-    color: hsl(0, 0%, 52%);
-    font-size: 0.78em;
-    letter-spacing: 0.09em;
-    margin: 0 0 0.3em;
-    text-transform: uppercase;
-  }
-
   .photos-intro h1 {
     font-size: clamp(2.1rem, 7vw, 3.25rem);
     letter-spacing: -0.04em;
     margin: 0 0 0.2em;
-  }
-
-  .photos-description {
-    color: hsl(0, 0%, 42%);
-    font-size: 1.05em;
-    margin: 0;
   }
 
   .photo-grid {
